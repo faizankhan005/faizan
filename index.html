@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Faizan Khan – GenAI Engineer, AI Agent &amp; Automation Developer</title>
+  <meta name="description" content="Portfolio of Faizan Khan – GenAI Engineer and Full Stack Developer building production RAG AI agents and automation with n8n, Pinecone, OpenAI, LangChain and Azure AI Foundry." />
+  <meta name="theme-color" content="#0d0b20" />
+  <meta property="og:title" content="Faizan Khan – GenAI Engineer &amp; AI Agent Developer" />
+  <meta property="og:description" content="RAG AI agents, n8n automation and full stack web apps. Projects, experience, certifications and resume." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%235b3df5'/%3E%3Ctext x='32' y='43' font-size='30' font-family='Arial' font-weight='800' text-anchor='middle' fill='white'%3EFK%3C/text%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" id="nav">
+    <div class="wrap nav-in">
+      <a href="#home" class="brand" aria-label="Faizan Khan – home">
+        <span class="mark">FK</span>
+        <span>Faizan Khan</span>
+      </a>
+      <nav class="links" id="links" aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certifications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeBtn" aria-label="Switch to dark theme" title="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+        <a class="btn btn-sm btn-primary" href="assets/Faizan_Khan_Resume.pdf" download><i class="fa-solid fa-download"></i> Resume</a>
+        <button class="icon-btn burger" id="burger" aria-label="Open menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <canvas id="flow" aria-hidden="true"></canvas>
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="status"><span class="dot"></span> Building production AI agents at AITLAS.us</p>
+          <h1>I build AI agents that do real work.</h1>
+          <p class="lead">I'm <strong>Faizan Khan</strong>, a GenAI Engineer and Full Stack Developer. I design RAG pipelines and automation workflows with n8n, Pinecone, OpenAI and Azure AI Foundry, then ship them with React and Node.js.</p>
+          <div class="cta">
+            <a class="btn btn-primary" href="assets/Faizan_Khan_Resume.pdf" download><i class="fa-solid fa-download"></i> Download resume</a>
+            <a class="btn btn-wa" data-wa="Hello Faizan! I saw your portfolio and I'd like to talk about an AI agent / automation project." href="https://wa.me/919671636548" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
+            <a class="btn btn-ghost" href="#projects">See my work</a>
+          </div>
+          <ul class="social" aria-label="Profiles">
+            <li><a href="https://www.linkedin.com/in/faizan05/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href="https://github.com/faizankhan005" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="mailto:mrfaizan023@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a></li>
+            <li><a href="tel:+919671636548" aria-label="Call"><i class="fa-solid fa-phone"></i></a></li>
+          </ul>
+        </div>
+
+        <div class="console" id="console" aria-label="Python snippet where a RAG agent answers who to hire">
+          <div class="console-bar">
+            <span class="lights"><i></i><i></i><i></i></span>
+            <span class="tab">agent.py</span>
+            <button class="run" id="runBtn" aria-label="Run the agent again"><i class="fa-solid fa-play"></i> Run</button>
+          </div>
+          <pre class="code" id="code" aria-live="off"></pre>
+          <div class="result" id="result" hidden>
+            <table>
+              <tbody>
+                <tr><th>name</th><td>Faizan Khan</td></tr>
+                <tr><th>role</th><td>GenAI Engineer &amp; Full Stack Developer</td></tr>
+                <tr><th>stack</th><td>n8n, Pinecone, LangChain, Azure AI Foundry</td></tr>
+                <tr><th>shipped</th><td>3 production RAG agents</td></tr>
+                <tr><th>now</th><td><span class="ok">AI Agent Developer @ AITLAS.us</span></td></tr>
+              </tbody>
+            </table>
+            <p class="rows"><i class="fa-solid fa-circle-check"></i> Response ready · grounded in 3 sources</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap kpis">
+        <div class="kpi"><b data-count="3">0</b><span>production RAG agents shipped</span></div>
+        <div class="kpi"><b data-count="3">0</b><span>roles and internships</span></div>
+        <div class="kpi"><b data-count="6">0</b><span>certifications</span></div>
+        <div class="kpi"><b data-count="5">0</b><span>featured projects</span></div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="track">
+        <span><i class="fa-solid fa-diagram-project"></i> n8n</span><span><i class="fa-solid fa-cubes"></i> Pinecone</span><span><i class="fa-solid fa-robot"></i> OpenAI API</span><span><i class="fa-solid fa-link"></i> LangChain</span><span><i class="fa-brands fa-microsoft"></i> Azure AI Foundry</span><span><i class="fa-brands fa-react"></i> React</span><span><i class="fa-solid fa-bolt"></i> Next.js</span><span><i class="fa-brands fa-node-js"></i> Node.js</span><span><i class="fa-brands fa-python"></i> Python</span><span><i class="fa-solid fa-leaf"></i> MongoDB</span>
+        <span><i class="fa-solid fa-diagram-project"></i> n8n</span><span><i class="fa-solid fa-cubes"></i> Pinecone</span><span><i class="fa-solid fa-robot"></i> OpenAI API</span><span><i class="fa-solid fa-link"></i> LangChain</span><span><i class="fa-brands fa-microsoft"></i> Azure AI Foundry</span><span><i class="fa-brands fa-react"></i> React</span><span><i class="fa-solid fa-bolt"></i> Next.js</span><span><i class="fa-brands fa-node-js"></i> Node.js</span><span><i class="fa-brands fa-python"></i> Python</span><span><i class="fa-solid fa-leaf"></i> MongoDB</span>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="wrap about-grid">
+        <div class="portrait reveal" id="portrait">
+          <div class="ring"></div>
+          <img id="portraitImg" src="assets/img/picture.jpeg" alt="Portrait of Faizan Khan" width="420" height="420" />
+          <div class="chip c1"><i class="fa-solid fa-diagram-project"></i> n8n</div>
+          <div class="chip c2"><i class="fa-solid fa-cubes"></i> Pinecone</div>
+          <div class="chip c3"><i class="fa-solid fa-robot"></i> GenAI</div>
+        </div>
+
+        <div class="about-copy reveal">
+          <h2>From idea to a working AI agent</h2>
+          <p>I'm a GenAI Engineer and Full Stack Developer (MERN) who builds production-grade RAG-based AI agents, LLM-powered automation systems and scalable web apps. I design multi-agent RAG pipelines with n8n, the Pinecone vector database, LangChain and Microsoft Azure AI Foundry, and connect LLMs through the OpenAI API.</p>
+          <p>I'm IBM-certified in AI and Cloud Technologies, and I've shipped real AI agents for medical, technology and retail businesses. I like work where an agent answers real customer questions and the whole workflow around it runs by itself.</p>
+
+          <div class="tabs" role="tablist" aria-label="What I build">
+            <button role="tab" aria-selected="true" data-tab="rag">RAG agents</button>
+            <button role="tab" aria-selected="false" data-tab="auto">Automation</button>
+            <button role="tab" aria-selected="false" data-tab="llm">LLM apps</button>
+            <button role="tab" aria-selected="false" data-tab="web">Full stack</button>
+            <button role="tab" aria-selected="false" data-tab="cloud">Cloud</button>
+          </div>
+          <div class="tabpanel" id="tabpanel" role="tabpanel"></div>
+
+          <dl class="facts">
+            <div><dt><i class="fa-solid fa-briefcase"></i> Now</dt><dd>AI Agent &amp; Automation Developer, AITLAS.us (since 06/2026)</dd></div>
+            <div><dt><i class="fa-solid fa-graduation-cap"></i> Education</dt><dd>B.Tech CSE, Chaudhary Devi Lal University, Sirsa (2023–2027)</dd></div>
+            <div><dt><i class="fa-solid fa-location-dot"></i> Location</dt><dd>Gurugram, Haryana, India</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section alt">
+      <div class="wrap">
+        <div class="head reveal">
+          <h2>Skills and tools</h2>
+          <p>Pick a group to filter. These are the tools I use on real projects.</p>
+        </div>
+        <div class="filters" id="skillFilters" role="group" aria-label="Filter skills">
+          <button class="on" data-f="all">All</button>
+          <button data-f="ai">GenAI and agents</button>
+          <button data-f="auto">Automation</button>
+          <button data-f="web">Full stack</button>
+          <button data-f="tools">Languages and tools</button>
+        </div>
+        <div class="skill-grid" id="skillGrid">
+          <article class="skill" data-g="ai"><i class="fa-solid fa-cubes" style="--c:#5b3df5"></i><h3>RAG architecture</h3><p>Retrieval pipelines that ground answers in your data.</p></article>
+          <article class="skill" data-g="ai"><i class="fa-solid fa-robot" style="--c:#10a37f"></i><h3>LLMs and OpenAI API</h3><p>Integrating language models into real products.</p></article>
+          <article class="skill" data-g="ai"><i class="fa-solid fa-wand-magic-sparkles" style="--c:#e8517b"></i><h3>Prompt engineering</h3><p>Prompts and guardrails for reliable outputs.</p></article>
+          <article class="skill" data-g="ai"><i class="fa-solid fa-brain" style="--c:#7b3fe4"></i><h3>AI agent development</h3><p>Agents that answer, look things up and take actions.</p></article>
+          <article class="skill" data-g="ai"><i class="fa-solid fa-database" style="--c:#0f9d9d"></i><h3>Pinecone and embeddings</h3><p>Vector database storage and semantic search.</p></article>
+          <article class="skill" data-g="ai"><i class="fa-brands fa-microsoft" style="--c:#0078d4"></i><h3>Azure AI Foundry</h3><p>Building and deploying agents on Microsoft Azure.</p></article>
+          <article class="skill" data-g="ai"><i class="fa-solid fa-link" style="--c:#1c8a6a"></i><h3>LangChain</h3><p>Chaining LLM calls, retrievers and tools.</p></article>
+          <article class="skill" data-g="auto"><i class="fa-solid fa-diagram-project" style="--c:#ea4b71"></i><h3>n8n workflows</h3><p>End-to-end automation from trigger to result.</p></article>
+          <article class="skill" data-g="auto"><i class="fa-solid fa-plug" style="--c:#f2b134"></i><h3>Webhooks and APIs</h3><p>Connecting apps with real-time integrations.</p></article>
+          <article class="skill" data-g="auto"><i class="fa-solid fa-spider" style="--c:#0f9d9d"></i><h3>Web scraping</h3><p>Collecting data to build vectorized knowledge bases.</p></article>
+          <article class="skill" data-g="auto"><i class="fa-solid fa-envelope-circle-check" style="--c:#d93025"></i><h3>Lead capture and email</h3><p>Lead forms, Gmail notifications and admin data flows.</p></article>
+          <article class="skill" data-g="web"><i class="fa-brands fa-react" style="--c:#20A8D8"></i><h3>React.js</h3><p>Interactive, component-based interfaces.</p></article>
+          <article class="skill" data-g="web"><i class="fa-solid fa-bolt" style="--c:#222"></i><h3>Next.js</h3><p>Full stack apps deployed on Vercel.</p></article>
+          <article class="skill" data-g="web"><i class="fa-brands fa-node-js" style="--c:#339933"></i><h3>Node.js and Express</h3><p>REST APIs, JWT auth and real-time servers.</p></article>
+          <article class="skill" data-g="tools"><i class="fa-brands fa-python" style="--c:#3776AB"></i><h3>Python</h3><p>AI, data and automation scripts.</p></article>
+          <article class="skill" data-g="tools"><i class="fa-brands fa-js" style="--c:#C9A800"></i><h3>JavaScript and TypeScript</h3><p>Typed, maintainable front and back end code.</p></article>
+          <article class="skill" data-g="tools"><i class="fa-solid fa-leaf" style="--c:#47A248"></i><h3>MongoDB and MySQL</h3><p>Document and relational data storage.</p></article>
+          <article class="skill" data-g="tools"><i class="fa-brands fa-git-alt" style="--c:#F05032"></i><h3>Git, GitHub, Postman</h3><p>Version control and API testing.</p></article>
+          <article class="skill" data-g="tools"><i class="fa-solid fa-cloud" style="--c:#1261FE"></i><h3>Cloud and hosting</h3><p>IBM Cloud, Microsoft Azure, Supabase and Vercel.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="wrap narrow">
+        <div class="head reveal">
+          <h2>Experience</h2>
+          <p>Where I've built and shipped, newest first.</p>
+        </div>
+        <ol class="timeline">
+          <li class="tl reveal">
+            <span class="tl-dot"></span>
+            <div class="tl-card">
+              <time>06/2026 – Present</time>
+              <h3>AI Agent &amp; Automation Developer</h3>
+              <p class="org">AITLAS.us | Akshay AICAMSR Pvt. Ltd. · On-site, Dwarka, New Delhi</p>
+              <p>Built and deployed production-ready RAG AI agents with n8n, Pinecone and Microsoft Azure AI Foundry for clients in medical, technology and retail, powering intelligent customer support. Designed web scraping, vectorized knowledge bases, lead capture, admin data management, email notifications and live AI chat integrations.</p>
+              <div class="tags"><span>n8n</span><span>Pinecone</span><span>Azure AI Foundry</span><span>RAG</span><span>Webhooks</span></div>
+              <a class="more" href="#projects">See the agents I built</a>
+            </div>
+          </li>
+          <li class="tl reveal">
+            <span class="tl-dot"></span>
+            <div class="tl-card">
+              <time>07/2025 – 12/2025</time>
+              <h3>AI/ML &amp; Cloud Technologies Intern</h3>
+              <p class="org">Edunet Foundation | IBM SkillsBuild · Remote</p>
+              <p>Built AutoAI pipelines, AI chatbots and RAG-based LLM applications on IBM Cloud. Applied prompt engineering, EDA and data visualization to real-world AI problem-solving projects.</p>
+              <div class="tags"><span>IBM Cloud</span><span>AutoAI</span><span>Chatbots</span><span>RAG</span><span>Prompt engineering</span></div>
+              <a class="more" href="#certificates">View certifications</a>
+            </div>
+          </li>
+          <li class="tl reveal">
+            <span class="tl-dot"></span>
+            <div class="tl-card">
+              <time>08/2025 – 09/2025</time>
+              <h3>Front-End Web Developer Intern</h3>
+              <p class="org">Edunet Foundation | IBM SkillsBuild · Remote</p>
+              <p>Built responsive, interactive web apps with React.js, Tailwind CSS and JavaScript. Improved application performance, user experience and mobile compatibility across multiple projects.</p>
+              <div class="tags"><span>React.js</span><span>Tailwind CSS</span><span>JavaScript</span><span>UI/UX</span></div>
+              <a class="more" href="#projects">See full stack projects</a>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section alt">
+      <div class="wrap">
+        <div class="head reveal">
+          <h2>Projects</h2>
+          <p>AI agents for real clients, plus LLM and full stack apps.</p>
+        </div>
+        <div class="filters" id="projFilters" role="group" aria-label="Filter projects">
+          <button class="on" data-f="all">All</button>
+          <button data-f="ai">AI and automation</button>
+          <button data-f="web">Full stack</button>
+        </div>
+
+        <div class="proj-grid" id="projGrid">
+          <article class="proj" data-g="ai">
+            <div class="proj-media art a1"><i class="fa-solid fa-robot"></i></div>
+            <div class="proj-body">
+              <h3>RAG-based multi-domain AI agents</h3>
+              <p>Three production RAG agents for real business clients in medical (aufhs.com, aicamsr.com) and technology (aitlas.us), handling question-answering and information retrieval. End-to-end n8n workflows cover scraping, embeddings, Pinecone storage, lead capture, Gmail alerts and webhook-based live chat.</p>
+              <div class="tags"><span>n8n</span><span>Pinecone</span><span>OpenAI API</span><span>LangChain</span><span>Azure AI Foundry</span></div>
+              <div class="proj-links">
+                <a class="btn btn-sm btn-primary" href="https://aitlas.us" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> aitlas.us</a>
+                <a class="btn btn-sm btn-ghost" href="https://aufhs.com" target="_blank" rel="noopener">aufhs.com</a>
+                <a class="btn btn-sm btn-ghost" href="https://aicamsr.com" target="_blank" rel="noopener">aicamsr.com</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="proj" data-g="ai">
+            <div class="proj-media art a3"><i class="fa-solid fa-database"></i></div>
+            <div class="proj-body">
+              <h3>AI-powered Text-to-SQL generator</h3>
+              <p>Converts plain-English questions into SQL with Google Gemini, runs them on SQLite and shows the generated query and results in a Streamlit interface. Uses prompt engineering with the database schema and examples.</p>
+              <div class="tags"><span>Python</span><span>Gemini LLM</span><span>Streamlit</span><span>SQLite</span><span>NLP</span></div>
+              <div class="proj-links">
+                <a class="btn btn-sm btn-primary" data-proj="sql" data-kind="code" href="https://github.com/faizankhan005/TextToSQL" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+                <a class="btn btn-sm btn-ghost" data-proj="sql" data-kind="live" href="#contact" hidden><i class="fa-solid fa-arrow-up-right-from-square"></i> Live demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="proj" data-g="ai">
+            <div class="proj-media art a5"><i class="fa-solid fa-plane-departure"></i></div>
+            <div class="proj-body">
+              <h3>Travel AI agent</h3>
+              <p>An intelligent assistant that uses machine learning and real-time data to simplify and personalise the travel experience.</p>
+              <div class="tags"><span>Python</span><span>Machine learning</span><span>Jupyter Notebook</span></div>
+              <div class="proj-links">
+                <a class="btn btn-sm btn-primary" data-proj="travel" data-kind="code" href="https://github.com/faizankhan005/Travel-Agent" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+                <a class="btn btn-sm btn-ghost" data-proj="travel" data-kind="live" href="#contact" hidden><i class="fa-solid fa-arrow-up-right-from-square"></i> Live demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="proj" data-g="web">
+            <div class="proj-media art a2"><i class="fa-solid fa-map-location-dot"></i></div>
+            <div class="proj-body">
+              <h3>Goyatrik – travel booking website</h3>
+              <p>A full stack travel booking platform delivered as a freelance project for a business client, with tour packages, booking management, user authentication and a responsive design. Deployed on Vercel.</p>
+              <div class="tags"><span>React.js</span><span>Next.js</span><span>Tailwind CSS</span><span>Vercel</span></div>
+              <div class="proj-links">
+                <a class="btn btn-sm btn-primary" data-proj="goyatrik" data-kind="code" href="https://github.com/faizankhan005/goyatrik" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+                <a class="btn btn-sm btn-ghost" data-proj="goyatrik" data-kind="live" href="#contact" hidden><i class="fa-solid fa-arrow-up-right-from-square"></i> Live site</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="proj" data-g="web">
+            <div class="proj-media art a4"><i class="fa-solid fa-comments"></i></div>
+            <div class="proj-body">
+              <h3>Real-time chat application</h3>
+              <p>A WebSocket messaging system that handles 100+ concurrent users with real-time sync, JWT authentication, Cloudinary media uploads and persistent MongoDB storage. Optimised REST queries cut average server response time by 30%.</p>
+              <div class="tags"><span>React.js</span><span>Node.js</span><span>Socket.io</span><span>MongoDB</span><span>JWT</span></div>
+              <div class="proj-links">
+                <a class="btn btn-sm btn-primary" data-proj="chat" data-kind="code" href="https://github.com/faizankhan005/Real-time-chat-appliction" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+                <a class="btn btn-sm btn-ghost" data-proj="chat" data-kind="live" href="#contact" hidden><i class="fa-solid fa-arrow-up-right-from-square"></i> Live demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="proj soon" data-g="ai">
+            <div class="proj-body">
+              <h3><i class="fa-solid fa-hourglass-half"></i> More on GitHub</h3>
+              <p>Explore all my repositories, from AI agents to full stack apps.</p>
+              <div class="proj-links"><a class="btn btn-sm btn-ghost" href="https://github.com/faizankhan005?tab=repositories" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> View repositories</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certificates" class="section">
+      <div class="wrap">
+        <div class="head reveal">
+          <h2>Certifications</h2>
+          <p>Formal training in AI, cloud and full stack development.</p>
+        </div>
+        <div class="cert-grid plain" id="certGrid"></div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section alt">
+      <div class="wrap narrow">
+        <div class="head reveal"><h2>Education</h2></div>
+        <div class="edu">
+          <article class="edu-card reveal">
+            <i class="fa-solid fa-building-columns"></i>
+            <div><h3>Bachelor of Technology, Computer Science and Engineering</h3><p>Chaudhary Devi Lal University, Sirsa, Haryana</p><span>2023 – 2027 · GPA 8.5 / 10</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="wrap">
+        <div class="head reveal">
+          <h2>Let's build something</h2>
+          <p>Need an AI agent, an automation workflow or a web app? Message me and I'll reply quickly.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-list reveal">
+            <a class="c-item" href="mailto:mrfaizan023@gmail.com"><i class="fa-solid fa-envelope"></i><span><b>Email</b>mrfaizan023@gmail.com</span></a>
+            <button class="c-item" id="copyMail" type="button"><i class="fa-regular fa-copy"></i><span><b>Copy email address</b>Saves it to your clipboard</span></button>
+            <a class="c-item" href="tel:+919671636548"><i class="fa-solid fa-phone"></i><span><b>Call</b>+91 96716 36548</span></a>
+            <a class="c-item wa" data-wa="Hello Faizan! I found your portfolio and wanted to connect." href="https://wa.me/919671636548" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i><span><b>WhatsApp</b>Start a chat</span></a>
+            <a class="c-item" href="https://www.linkedin.com/in/faizan05/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i><span><b>LinkedIn</b>faizan05</span></a>
+            <a class="c-item" href="https://github.com/faizankhan005" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i><span><b>GitHub</b>faizankhan005</span></a>
+            <a class="c-item" href="https://www.google.com/maps/search/?api=1&query=Gurugram+Haryana+India" target="_blank" rel="noopener"><i class="fa-solid fa-location-dot"></i><span><b>Location</b>Gurugram, Haryana, India</span></a>
+          </div>
+
+          <form class="form reveal" id="contactForm" novalidate>
+            <h3>Send a message</h3>
+            <label>Your name<input id="fName" name="name" type="text" autocomplete="name" required placeholder="Jane Doe" /></label>
+            <label>Your email<input id="fEmail" name="email" type="email" autocomplete="email" required placeholder="jane@company.com" /></label>
+            <label>Subject<input id="fSubject" name="subject" type="text" required placeholder="AI agent for my business" /></label>
+            <label>Message<textarea id="fMsg" name="message" rows="5" required placeholder="Tell me about the agent, workflow or project…"></textarea></label>
+            <p class="err" id="formErr" role="alert" hidden></p>
+            <div class="form-actions">
+              <button class="btn btn-wa" type="submit" data-via="wa"><i class="fa-brands fa-whatsapp"></i> Send on WhatsApp</button>
+              <button class="btn btn-ghost" type="submit" data-via="mail"><i class="fa-solid fa-envelope"></i> Send by email</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap foot-in">
+      <p>© <span id="year">2026</span> Faizan Khan. Always learning, always building.</p>
+      <ul class="social">
+        <li><a href="https://www.linkedin.com/in/faizan05/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+        <li><a href="https://github.com/faizankhan005" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+        <li><a href="mailto:mrfaizan023@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a></li>
+        <li><a href="#home" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <a class="fab" data-wa="Hello Faizan! I'd like to connect with you." href="https://wa.me/919671636548" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
